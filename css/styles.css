@@ -1,0 +1,97 @@
+#header h2 {
+    font-size: 40px;
+    text-align: center;
+    //color: white;
+}
+#header a, input[type="submit"] {
+    display: inline-block;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    margin: 10px;
+} 
+#header a:hover, input[type="submit"] {
+    background: rgba(140,140,140,.2); 
+    cursor: pointer;
+}
+
+#header a:active, input[type="submit"] {
+    background: white; 
+    cursor: pointer;
+}
+
+.success_message {
+    display: block;
+    width: 200px;
+    text-align: center;
+    background: #E6F7D1;
+}
+
+.mesage_error {
+    display: block;
+    width: 200px;
+    text-align: center;
+    background: #FF4040;
+}
+
+.table_sort table {
+    border-collapse: collapse;
+}
+
+.table_sort th {
+    color: #fff;
+    background: #888;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.table_sort td,
+.table_sort th {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #846868;
+}
+
+.table_sort a {
+    text-decoration: none;
+    color: #000;
+}
+
+.table_sort a:hover {
+    color: rgb(150,150,150); 
+    cursor: pointer;
+}
+
+.table_sort tbody tr:nth-child(even) {
+    background: #e3e3e3;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 8px;
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+	content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+	content: "▲"
+}
+
+#copy {
+    margin: 20px;
+}
